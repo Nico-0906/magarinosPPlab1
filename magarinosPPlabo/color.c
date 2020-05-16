@@ -29,6 +29,7 @@ void inicializarColores(eColor colores[], int tamcol){
 }
 
 void mostrarColores(eColor colores[], int tamcol){
+    system("cls");
     printf("**** Colores de moto ****\n\n");
     printf("ID        Descripcion\n\n");
 
@@ -37,6 +38,4 @@ void mostrarColores(eColor colores[], int tamcol){
             printf("%d        %10s\n", colores[i].id, colores[i].nombreColor);
         }
     }
-    fflush(stdin);
-    getchar();
 }

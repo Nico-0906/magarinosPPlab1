@@ -121,20 +121,19 @@ int altaMoto(int idMoto, eMoto motos[], int tammot, eTipo tipos[], int tamtip, e
     printf("\nIngrese tipo por id: \n");
     fflush(stdin);
     scanf("%d", &auxMoto.idTipo);
-    getchar();
 
     mostrarColores(colores, tamcol);
     printf("Ingrese color por id: \n");
     scanf("%d", &auxMoto.idColor);
-    fflush(stdin);
-    getchar();
 
+    system("cls");
     printf("Ingrese cilindrada: \n");
     scanf("%d", &auxMoto.cilindrada);
-    fflush(stdin);
-    getchar();
 
     printf("\nMoto agregada con exito.!");
+
+    fflush(stdin);
+    getchar();
 
     auxMoto.isEmpty = 0;
 

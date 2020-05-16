@@ -30,7 +30,7 @@ void inicializarTipo(eTipo tipos[], int tamtip){
 }
 
 void mostrarTipos(eTipo tipos[], int tamtip){
-
+    system("cls");
     printf("**** Tipos de moto ****\n\n");
     printf("ID        Descripcion\n\n");
 
@@ -39,6 +39,4 @@ void mostrarTipos(eTipo tipos[], int tamtip){
             printf("%d        %10s\n", tipos[i].id, tipos[i].descripcion);
         }
     }
-    fflush(stdin);
-    getchar();
 }
