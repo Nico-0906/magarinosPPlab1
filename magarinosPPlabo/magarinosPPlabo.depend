@@ -1,0 +1,110 @@
+# depslib dependency file v1.0
+1589589825 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+	"herramientas.h"
+
+1589580160 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\fecha.h
+
+1589585828 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\tipo.h
+
+1589586439 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\color.h
+
+1589588002 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\moto.h
+
+1589589021 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\servicio.h
+
+1589589587 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\trabajo.h
+
+1589582792 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\herramientas.h
+
+1589582710 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\herramientas.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+
+1589585889 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\color.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+
+1589589801 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\moto.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+	"herramientas.h"
+
+1589589941 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\tipo.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+
+1589589575 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\trabajo.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+	"herramientas.h"
+
+1589589814 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\servicio.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+	"herramientas.h"
+
