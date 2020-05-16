@@ -20,6 +20,7 @@ void inicializarServicios(eServicio servicios[], int tamser){
 }
 
 void mostrarServicios(eServicio servicios[], int tamser){
+    system("cls");
     printf("**** Servicios ****\n\n");
     printf("ID        Descripcion     Precio\n\n");
 
@@ -28,6 +29,4 @@ void mostrarServicios(eServicio servicios[], int tamser){
             printf("%d        %10s     %.2f\n", servicios[i].id, servicios[i].descripcion, servicios[i].precio);
         }
     }
-    fflush(stdin);
-    getchar();
 }

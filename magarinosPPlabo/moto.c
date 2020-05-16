@@ -12,6 +12,71 @@
 #include "trabajo.h"
 #include "herramientas.h"
 
+void modificarMoto(eMoto motos[], int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol){
+    system("cls");
+    int auxId;
+    int busqueda;
+    char confirmacion;
+    eMoto auxMoto;
+
+    printf("***** MODIFICAR MOTO ***** \n\n");
+
+    listarMotos(motos, tammot, tipos, tamtip, colores, tamcol);
+    printf("\nIngrese ID de MOTO: ");
+    fflush(stdin);
+    scanf("%d", &auxId);
+    getchar();
+
+    busqueda = buscarMoto(auxId, motos, tammot);
+
+    if(busqueda != -1){
+        mostrarMoto(motos[busqueda] , tammot, tipos, tamtip, colores, tamcol));
+
+        printf("Que desea modificar: \n\n1- Color\n 2- Cilindrada\n 3- Cancelar \n\n");
+
+
+        scanf("%d", &opcion);
+
+    switch(opcion){
+        case 1:
+            printf("Seleccione nuevo color: \n");
+            mostrarColores(colores, tamcol);
+            fflush(stdin);
+            scanf("%d", &auxMoto.idColor);
+
+            printf("\nDesea confirmar la modificacion? s/n \n\n");
+            fflush(stdin);
+            scanf("%c", &confirmacion);
+
+            if(confirmacion == 's'){
+                motos[busqueda].idColor = auxMoto.idColor;
+                printf("\nModificado con exito.! \n\n");
+            }else{
+                printf("\nOperacion cancelada. \n\n");
+            }
+            break;
+        case 2:
+            printf("Ingrese nueva cilindrada: \n");
+            scanf("%d", &auxMoto.cilindrada);
+            printf("\nDesea confirmar la modificacion? s/n \n\n");
+            fflush(stdin);
+            scanf("%c", &confirmacion);
+
+            if(confirmacion == 's'){
+                motos[busqueda].cilindrada = auxMoto.cilindrada;
+                printf("\nModificado con exito.! \n\n");
+            }else{
+                printf("\nOperacion cancelada. \n\n");
+            }
+            break;
+        case 3:
+           break;
+    }
+
+    }else{
+        printf("\nMoto no encontrada. \n\n");
+    }
+}
 
 void mostrarMoto(eMoto motos , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol){
     char color[20];
@@ -20,7 +85,7 @@ void mostrarMoto(eMoto motos , int tammot, eTipo tipos[], int tamtip, eColor col
     cargarColor(color , motos.idColor, colores, tamcol);
     cargarTipo(tipo , motos.idTipo, tipos, tamtip);
 
-    printf("%d    %10s    %10s     %10s     %4d\n", motos.id , motos.marca , tipo, color, motos.cilindrada);
+    printf("%d    %10s    %10s    %10s       %4d\n", motos.id , motos.marca , tipo, color, motos.cilindrada);
 }
 
 int buscarMoto(int id, eMoto motos[], int tammot){
@@ -45,7 +110,8 @@ void bajaMoto(eMoto motos[] , int tammot, eTipo tipos[], int tamtip, eColor colo
 
     printf("***** BAJA MOTO ***** \n\n");
 
-    printf("Ingrese ID de moto: \n");
+    listarMotos(motos, tammot, tipos, tamtip, colores, tamcol);
+    printf("\nIngrese ID de moto: \n");
     scanf("%d", &auxId);
 
     busqueda = buscarMoto(auxId, motos, tammot);
@@ -69,8 +135,9 @@ void bajaMoto(eMoto motos[] , int tammot, eTipo tipos[], int tamtip, eColor colo
 }
 
 void listarMotos(eMoto motos[] , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol){
+    system("cls");
     printf("****** MOTOS ******\n\n");
-    printf("ID    MARCA     TIPO     COLOR      CILINDRADA\n\n");
+    printf("ID         MARCA        TIPO          COLOR     CILINDRADA\n\n");
 
     for(int i = 0 ; i < tammot ; i++){
         if(motos[i].isEmpty == 0){
@@ -113,8 +180,8 @@ int altaMoto(int idMoto, eMoto motos[], int tammot, eTipo tipos[], int tamtip, e
     auxMoto.id = idMoto;
 
     printf("Ingrese marca: \n");
-    gets(auxMoto.marca);
     fflush(stdin);
+    getStr(auxMoto.marca, 20);
     getchar();
 
     mostrarTipos(tipos, tamtip);
