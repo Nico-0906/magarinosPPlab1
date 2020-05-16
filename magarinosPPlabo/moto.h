@@ -15,7 +15,7 @@ typedef struct{
 
 void bajaMoto(eMoto motos[] , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol);
 
-int mostrarMoto(eMoto motos , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol);
+void mostrarMoto(eMoto motos , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol);
 
 void listarMotos(eMoto motos[], int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol);
 

@@ -19,7 +19,7 @@
 
 1589586439 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\color.h
 
-1589588002 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\moto.h
+1589591770 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\moto.h
 
 1589589021 c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\servicio.h
 
@@ -53,7 +53,7 @@
 	"servicio.h"
 	"trabajo.h"
 
-1589591129 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\moto.c
+1589591759 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\moto.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio.h>
@@ -80,7 +80,7 @@
 	"servicio.h"
 	"trabajo.h"
 
-1589589575 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\trabajo.c
+1589591781 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\trabajo.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio.h>

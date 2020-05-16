@@ -13,7 +13,7 @@
 #include "herramientas.h"
 
 
-int mostrarMoto(eMoto motos , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol){
+void mostrarMoto(eMoto motos , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol){
     char color[20];
     char tipo[20];
 
@@ -21,7 +21,6 @@ int mostrarMoto(eMoto motos , int tammot, eTipo tipos[], int tamtip, eColor colo
     cargarTipo(tipo , motos.idTipo, tipos, tamtip);
 
     printf("%d    %10s    %10s     %10s     %4d\n", motos.id , motos.marca , tipo, color, motos.cilindrada);
-
 }
 
 int buscarMoto(int id, eMoto motos[], int tammot){
@@ -114,7 +113,7 @@ int altaMoto(int idMoto, eMoto motos[], int tammot, eTipo tipos[], int tamtip, e
     auxMoto.id = idMoto;
 
     printf("Ingrese marca: \n");
-    getStr(auxMoto.marca, 20);
+    gets(auxMoto.marca);
     fflush(stdin);
     getchar();
 

@@ -58,7 +58,7 @@ int main()
                 mostrarServicios(servicios,  TAMSER);
                 break;
             case 'h':
-                altaTrabajos();
+                //altaTrabajos();
                 break;
             case 'i':
 //                mostrarTrabajos(trabajos, TAMTRA);

@@ -13,9 +13,9 @@
 #include "herramientas.h"
 
 
-int altaTrabajos(){
+//int altaTrabajos(){
 
-}
+//}
 
 void inicializarTrabajos(eTrabajo trabajos[] ,int tamtra){
      for(int i = 0 ; i < tamtra ; i++){
