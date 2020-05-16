@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1589589825 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\main.c
+1589591080 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio.h>
@@ -40,7 +40,7 @@
 	"servicio.h"
 	"trabajo.h"
 
-1589585889 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\color.c
+1589590979 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\color.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio.h>
@@ -53,7 +53,7 @@
 	"servicio.h"
 	"trabajo.h"
 
-1589589801 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\moto.c
+1589591129 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\moto.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio.h>
@@ -94,7 +94,7 @@
 	"trabajo.h"
 	"herramientas.h"
 
-1589589814 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\servicio.c
+1589591029 source:c:\users\agos\desktop\parcial\magarinospplab1\magarinospplabo\servicio.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio.h>

@@ -35,7 +35,8 @@ void mostrarColores(eColor colores[], int tamcol){
     for(int i = 0 ; i < tamcol ; i++){
         if(colores[i].isEmpty == 0){
             printf("%d        %10s\n", colores[i].id, colores[i].nombreColor);
-            getchar();
         }
     }
+    fflush(stdin);
+    getchar();
 }

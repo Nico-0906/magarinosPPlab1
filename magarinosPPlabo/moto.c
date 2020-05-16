@@ -20,7 +20,7 @@ int mostrarMoto(eMoto motos , int tammot, eTipo tipos[], int tamtip, eColor colo
     cargarColor(color , motos.idColor, colores, tamcol);
     cargarTipo(tipo , motos.idTipo, tipos, tamtip);
 
-    printf("%d    %10s    %10s     %10s     %4d", motos.id , motos.marca, tipo, color, motos.cilindrada);
+    printf("%d    %10s    %10s     %10s     %4d\n", motos.id , motos.marca , tipo, color, motos.cilindrada);
 
 }
 
@@ -71,13 +71,15 @@ void bajaMoto(eMoto motos[] , int tammot, eTipo tipos[], int tamtip, eColor colo
 
 void listarMotos(eMoto motos[] , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol){
     printf("****** MOTOS ******\n\n");
-    printf("ID    MARCA     TIPO     COLOR      CILINDRADA");
+    printf("ID    MARCA     TIPO     COLOR      CILINDRADA\n\n");
 
     for(int i = 0 ; i < tammot ; i++){
         if(motos[i].isEmpty == 0){
             mostrarMoto(motos[i] , tammot, tipos, tamtip, colores, tamcol);
         }
     }
+    fflush(stdin);
+    getchar();
 }
 
 int buscarLibreMoto(eMoto motos[], int tammot){

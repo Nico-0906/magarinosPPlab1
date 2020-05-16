@@ -30,9 +30,9 @@ int main()
     eTrabajo trabajos[TAMTRA];
 
     inicializarMoto(motos, TAMMOT);
-    inicializarTipo(tipos, TAMTIP);
-    inicializarColores(colores, TAMCOL);
-    inicializarServicios(servicios, TAMSER);
+    //inicializarTipo(tipos, TAMTIP);
+    //inicializarColores(colores, TAMCOL);
+    //inicializarServicios(servicios, TAMSER);
     inicializarTrabajos(trabajos, TAMTRA);
 
     do{
@@ -41,7 +41,6 @@ int main()
                 altaMoto(autoIdMoto, motos, TAMMOT, tipos, TAMTIP, colores, TAMCOL);
                 break;
             case 'b':
-                mostrarTipos(tipos, TAMTIP);
                 break;
             case 'c':
                 bajaMoto(motos, TAMMOT, tipos, TAMTIP, colores, TAMCOL);

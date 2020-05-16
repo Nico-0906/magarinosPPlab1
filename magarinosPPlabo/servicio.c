@@ -25,8 +25,9 @@ void mostrarServicios(eServicio servicios[], int tamser){
 
     for(int i = 0 ; i < tamser ; i++){
         if(servicios[i].isEmpty == 0){
-            printf("%d        %10s\n     %.2f", servicios[i].id, servicios[i].descripcion, servicios[i].precio);
-            getchar();
+            printf("%d        %10s     %.2f\n", servicios[i].id, servicios[i].descripcion, servicios[i].precio);
         }
     }
+    fflush(stdin);
+    getchar();
 }
