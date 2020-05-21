@@ -30,9 +30,9 @@ void inicializarTipo(eTipo tipos[], int tamtip){
 }
 
 void mostrarTipos(eTipo tipos[], int tamtip){
-    system("cls");
+    system("clear");
     printf("**** Tipos de moto ****\n\n");
-    printf("ID        Descripcion\n\n");
+    printf("ID          Descripcion\n\n");
 
     for(int i = 0 ; i < tamtip ; i++){
         if(tipos[i].isEmpty == 0){

@@ -11,6 +11,11 @@ typedef struct{
 
 #endif // COLOR_H_INCLUDED
 
+/**
+*
+*
+*
+*/
 int cargarColor(char descripcion[], int id, eColor colores[], int tamcol);
 int cargarTipo(char descripcion[], int id, eTipo tipos[], int tamtip);
 void inicializarColores(eColor colores[], int tamcol);

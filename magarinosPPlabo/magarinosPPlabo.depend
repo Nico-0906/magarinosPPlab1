@@ -108,3 +108,116 @@
 	"trabajo.h"
 	"herramientas.h"
 
+1590067049 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/color.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+
+1590026376 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/fecha.h
+
+1590026376 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/tipo.h
+
+1590026376 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/color.h
+
+1590089874 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/moto.h
+
+1590026376 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/servicio.h
+
+1590089368 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/trabajo.h
+
+1590075068 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/herramientas.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdio_ext.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+
+1590093011 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdio_ext.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+	"herramientas.h"
+
+1590073464 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/herramientas.h
+
+1590089793 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/moto.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdio_ext.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+	"herramientas.h"
+
+1590081789 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/servicio.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+	"herramientas.h"
+
+1590067067 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/tipo.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+
+1590089452 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/trabajo.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdio_ext.h>
+	"fecha.h"
+	"tipo.h"
+	"color.h"
+	"moto.h"
+	"servicio.h"
+	"trabajo.h"
+	"herramientas.h"
+

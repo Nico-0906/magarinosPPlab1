@@ -20,9 +20,8 @@ void inicializarServicios(eServicio servicios[], int tamser){
 }
 
 void mostrarServicios(eServicio servicios[], int tamser){
-    system("cls");
     printf("**** Servicios ****\n\n");
-    printf("ID        Descripcion     Precio\n\n");
+    printf("ID          Descripcion     Precio\n\n");
 
     for(int i = 0 ; i < tamser ; i++){
         if(servicios[i].isEmpty == 0){

@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdio_ext.h>
 
 #include "fecha.h"
 #include "tipo.h"
@@ -10,6 +11,14 @@
 #include "moto.h"
 #include "servicio.h"
 #include "trabajo.h"
+
+void tipoNombre(char vec[], int tam){
+    vec[0] = toupper(vec[0]);
+
+    for(int i = 1 ; i < tam ; i++){
+        vec[i] = tolower(vec[i]);
+    }
+}
 
 void getStr(char cadena[], int tam){
 
@@ -25,7 +34,7 @@ void getStr(char cadena[], int tam){
 char menuOpciones(){
     char retorno;
     int bandera = 0;
-    system("cls");
+    system("clear");
 
     printf("****** Menu opciones ******\n\n");
     printf("A- Alta moto\n");
@@ -41,13 +50,12 @@ char menuOpciones(){
     fflush(stdin);
 
     while(bandera == 0){
-        fflush(stdin);
+        __fpurge(stdin);
         scanf("%c", &retorno);
         if( (retorno < 75 && retorno > 64) || (retorno < 107 && retorno > 96) ){
             bandera = 1;
         }else{
             printf("\nOpcion incorrecta, ingrese opcion: ");
-            fflush(stdin);
         }
     }
 
@@ -59,11 +67,11 @@ void getCharConfirmValidado(char* caracter){
     char opcion;
 
     while(bucle == 0){
-        fflush(stdin);
+        __fpurge(stdin);
         scanf("%c", &opcion);
         opcion = tolower(opcion);
 
-        if(opcion == 's' || opcion == 'n'){
+        if(opcion == 's' || opcion == 'n' || opcion == 'S' || opcion == 'N'){
             *caracter = opcion;
             bucle = 1;
         }else{

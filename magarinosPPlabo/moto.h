@@ -13,7 +13,13 @@ typedef struct{
 
 #endif // MOTO_H_INCLUDED
 
-void bajaMoto(eMoto motos[] , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol);
+int cargarCilindrada();
+
+void modificarMoto(eMoto motos[], int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol);
+
+int buscarMoto(int id, eMoto motos[], int tammot);
+
+int bajaMoto(eMoto motos[] , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol);
 
 void mostrarMoto(eMoto motos , int tammot, eTipo tipos[], int tamtip, eColor colores[], int tamcol);
 

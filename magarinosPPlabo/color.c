@@ -29,9 +29,9 @@ void inicializarColores(eColor colores[], int tamcol){
 }
 
 void mostrarColores(eColor colores[], int tamcol){
-    system("cls");
+    system("clear");
     printf("**** Colores de moto ****\n\n");
-    printf("ID        Descripcion\n\n");
+    printf("ID           Descripcion\n\n");
 
     for(int i = 0 ; i < tamcol ; i++){
         if(colores[i].isEmpty == 0){

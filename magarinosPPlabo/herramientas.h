@@ -4,6 +4,9 @@
 
 
 #endif // HERRAMIENTAS_H_INCLUDED
+
+
+void tipoNombre(char vec[], int tam);
 void getStr(char cadena[], int tam);
 int menuOpciones();
 void getCharConfirmValidado(char* caracter);
