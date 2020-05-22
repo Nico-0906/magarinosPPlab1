@@ -80,6 +80,7 @@ int buscarLibreTrabajo(eTrabajo trabajos[], int tamtra){
 int altaTrabajos(int id, eMoto motos[], int tammot, eColor colores[], int tamcol, eServicio servicios[], int tamser, eTipo tipos [], int tamtip, eTrabajo trabajos[], int tamtra){
     int retorno = 0;
     int lugar;
+    int bucle = 1;
 
     lugar = buscarLibreTrabajo(trabajos, tamtra);
     eTrabajo auxTrabajo;
@@ -94,22 +95,31 @@ int altaTrabajos(int id, eMoto motos[], int tammot, eColor colores[], int tamcol
 
     auxTrabajo.id = id;
 
-    system("clear");
-    printf("****** Alta trabajos ****** \n\n");
-    printf("A que moto desea asignarle un trabajo \n\n");
-    listarMotos(motos, tammot, tipos, tamtip, colores, tamcol);
-    scanf("%d", &auxTrabajo.idMoto);
+        system("clear");
+        printf("****** Alta trabajos ****** \n\n");
+        printf("A que moto desea asignarle un trabajo \n\n");
+        listarMotos(motos, tammot, tipos, tamtip, colores, tamcol);
+
+    while(bucle == 1){
+        scanf("%d", &auxTrabajo.idMoto);
+        if(buscarMoto(auxTrabajo.idMoto, motos, tammot) == -1){
+            printf("Moto no encontrada, reingrese ID: ");
+        }else{
+            bucle = 0;
+        }
+    }
 
     system("clear");
     printf("****** Alta trabajos ****** \n\n");
     printf("Que servicio desea para el trabajo \n\n");
     mostrarServicios(servicios, tamser);
-    scanf("%d", &auxTrabajo.idServicio);
+    auxTrabajo.idServicio = validarOpcion( 20003, 20000, "\nIngrese ID: ",  "\nID incorrecto, reintente ");
 
     system("clear");
     printf("****** Alta trabajos ****** \n\n");
     printf("Ingrese fecha para el trabajo DD/MM/AAAA: ");
-    scanf("%d/%d/%d", &auxTrabajo.fecha.dia, &auxTrabajo.fecha.mes, &auxTrabajo.fecha.anio);
+    //scanf("%d/%d/%d", &auxTrabajo.fecha.dia, &auxTrabajo.fecha.mes, &auxTrabajo.fecha.anio);
+    pedirFecha(&auxTrabajo.fecha);
 
     auxTrabajo.isEmpty = 0;
     trabajos[lugar] = auxTrabajo;

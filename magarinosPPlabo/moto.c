@@ -21,9 +21,7 @@ int cargarCilindrada(){
     system("clear");
     printf("***** Ingrese opcion de cilindrada ***** \n\n");
     printf(" 1-  50cc\n 2-  125cc\n 3-  500cc\n 4-  600cc \n 5-  750cc\n\n");
-    printf("Ingrese opcion de cilindrada: ");
-
-    scanf("%d", &opcion);
+    opcion = validarOpcion(5, 1, "\nIngrese opcion de cilindrada: ", "\nOpcion incorrecta, reintentar: ");;
 
     while(bucle == 1){
         switch(opcion){
@@ -246,17 +244,18 @@ int altaMoto(int idMoto, eMoto motos[], int tammot, eTipo tipos[], int tamtip, e
 
     printf("Ingrese marca: \n");
     __fpurge(stdin);
-    getStr(auxMoto.marca, 20);
-    tipoNombre(auxMoto.marca, 20);
+    //getStr(auxMoto.marca, 20);
+    while(getNombre(auxMoto.marca, 20)){
+        printf("\nReingrese nombre: ");
+    }
+    //tipoNombre(auxMoto.marca, 20);
 
     mostrarTipos(tipos, tamtip);
-    printf("\n\nIngrese tipo por id: ");
     __fpurge(stdin);
-    scanf("%d", &auxMoto.idTipo);
+    auxMoto.idTipo = validarOpcion(1003, 1000, "\nIngrese tipo por ID: ", "\nID incorrecto, reintentar: ");
 
     mostrarColores(colores, tamcol);
-    printf("\nIngrese color por id: ");
-    scanf("%d", &auxMoto.idColor);
+    auxMoto.idColor = validarOpcion(10004, 10000, "\nIngrese color por ID: ", "\nID incorrecto, reintentar: ");;
 
 
     auxMoto.cilindrada = cargarCilindrada();

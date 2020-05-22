@@ -123,17 +123,17 @@
 
 1590026376 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/fecha.h
 
-1590026376 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/tipo.h
+1590097168 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/tipo.h
 
-1590026376 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/color.h
+1590096156 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/color.h
 
-1590089874 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/moto.h
+1590102259 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/moto.h
 
-1590026376 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/servicio.h
+1590096563 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/servicio.h
 
-1590089368 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/trabajo.h
+1590097155 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/trabajo.h
 
-1590075068 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/herramientas.c
+1590105202 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/herramientas.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio.h>
@@ -146,6 +146,7 @@
 	"moto.h"
 	"servicio.h"
 	"trabajo.h"
+	"herramientas.h"
 
 1590093011 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/main.c
 	<stdio.h>
@@ -162,9 +163,9 @@
 	"trabajo.h"
 	"herramientas.h"
 
-1590073464 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/herramientas.h
+1590104683 /home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/herramientas.h
 
-1590089793 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/moto.c
+1590105212 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/moto.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio.h>
@@ -206,7 +207,7 @@
 	"servicio.h"
 	"trabajo.h"
 
-1590089452 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/trabajo.c
+1590100909 source:/home/nico/Desktop/PARCIAL/magarinosPPlab1/magarinosPPlabo/trabajo.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio.h>
